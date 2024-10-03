@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban Vault</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Urban Vault</h1>
+    </header>
+    <main>
+        <section id="ticket-form">
+            <h2>Create New Ticket</h2>
+            <form id="create-ticket-form">
+                <input type="text" id="ticket-title" placeholder="Ticket Title" required>
+                <textarea id="ticket-description" placeholder="Ticket Description" required></textarea>
+                <select id="ticket-status">
+                    <option value="OPEN">Open</option>
+                    <option value="IN_PROGRESS">In Progress</option>
+                    <option value="CLOSED">Closed</option>
+                </select>
+                <button type="submit">Create Ticket</button>
+            </form>
+        </section>
+        <section id="ticket-list">
+            <h2>Tickets</h2>
+            <div id="tickets-container"></div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
